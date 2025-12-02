@@ -1,4 +1,4 @@
-import appCss from "@shared/styles.css?url";
+import styles from "@shared/styles.css?url";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 type RootDocumentProps = {
@@ -16,17 +16,16 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "Mailo - Building email feature faster",
+        title: "Beautifully Crafted React Email Templates & Blocks | Mailo",
       },
     ],
     links: [
       {
         rel: "stylesheet",
-        href: appCss,
+        href: styles,
       },
     ],
   }),
-
   shellComponent: RootDocument,
 });
 
